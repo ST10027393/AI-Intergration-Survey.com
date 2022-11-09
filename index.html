@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AI Intergration Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">AI Intergration Survey Form</h1>
+    <p id="description">This survey is to guage the publics feelings on the increased intergration of artificial intelligence into our daily lives.</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Name <input type="text" id="name" required placeholder="Enter your name" /></label>
+      <label id="email-label">Email <input type="email" id="email" required placeholder="Enter your email" /></label>
+      <label id="number-label">Age <input type="number" id="number" min="16" max="120" placeholder="age" />
+      <p class="questions">Which option best describes your current role in society?</p>
+      <select id="dropdown" required>
+        <option disabled="" selected="" value="">Select current role</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+      </fieldset>
+      <fieldset> 
+        <p class="questions">Do you support the advancement of artificial intelligence?</p>
+      <label><input class="input-radio" id="yes" type="radio" name="yes-no" value="yes" />Yes </label>
+      <label><input class="input-radio" id="no" type="radio" name="yes-no" value="no" />No</label>
+      </fieldset>
+      <fieldset>
+        <p class="questions">How does the increasing realization, that the worlds future technologies will be mostly dependant on ai systems, make you feel?(Check all that apply)</p>
+       <label> <input type="checkbox" name=".." value="..." />Happy</label>
+       <label> <input type="checkbox" name=".." value="..." />Excited</label>
+       <label> <input type="checkbox" name=".." value="..." />Optimistic</label>
+       <label> <input type="checkbox" name=".." value="..." />Threatened</label>
+       <label> <input type="checkbox" name=".." value="..." />Unsafe</label>
+       <label> <input type="checkbox" name=".." value="..." />Angry</label>
+
+      </fieldset>
+      <fieldset>
+      <label>
+        <p class="questions">Please elaborate on the reasoning behind your feelings:</p>
+        <textarea rows="4" cols="30" placeholder="E.g. I feel frustrated because..." name="bio"></textarea>
+      </label>
+      </fieldset>
+     <input type="submit" value="Submit" id="submit"/>
+    </form>
+    <p>Thank you for taking part in this survey your answer and opinions are very valuable to us at the AI HUB</p>
+  </body>
+</html>
